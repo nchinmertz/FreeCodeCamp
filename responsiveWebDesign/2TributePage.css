@@ -1,0 +1,32 @@
+html{
+    font-size: 10px;
+}
+body{
+    font-family: sans-serif;
+    text-align: center;
+    color:#333;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin: 0;
+}
+main{
+    display: block;
+    background:#eee;
+    margin: 30px 8px;
+    padding: 15px;
+    border-radius: 5px;
+}
+h1{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+li{
+    text-align: left;
+}
