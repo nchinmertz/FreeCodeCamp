@@ -1,0 +1,11 @@
+** start of index.jsx **
+
+const JSX = (
+  <div>
+    <h1>This is a block of JSX</h1>
+    <p>{/*BLAH*/}Here's a subtitle</p>
+  </div>
+);
+
+** end of index.jsx **
+
