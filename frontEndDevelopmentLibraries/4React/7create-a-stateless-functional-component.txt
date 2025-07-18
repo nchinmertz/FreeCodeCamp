@@ -1,0 +1,13 @@
+** start of index.jsx **
+
+const MyComponent = function() {
+  // Change code below this line
+  return(
+    <div>BONK</div>
+  )
+
+  // Change code above this line
+}
+
+** end of index.jsx **
+
