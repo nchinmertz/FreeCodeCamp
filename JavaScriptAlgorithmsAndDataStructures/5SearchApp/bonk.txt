@@ -1,0 +1,9 @@
+{"id":1,"name":"Pyrolynx","weight":42,"height":32,
+    "special":{"name":"Blazing Reflex","description":"Increases speed when hit by a Fire-type move."},
+    "stats":[{"base_stat":65,"name":"hp"},{"base_stat":80,"name":"attack"},{"base_stat":50,"name":"defense"},{"base_stat":90,"name":"special-attack"},{"base_stat":55,"name":"special-defense"},{"base_stat":100,"name":"speed"}],
+    "types":[{"name":"fire"}]}
+
+{"id":5,"name":"Cryostag","weight":160,"height":67,
+    "special":{"name":"Frozen Veil","description":"Reduces damage from Fire-type moves by 30%."},
+    "stats":[{"base_stat":85,"name":"hp"},{"base_stat":75,"name":"attack"},{"base_stat":65,"name":"defense"},{"base_stat":110,"name":"special-attack"},{"base_stat":105,"name":"special-defense"},{"base_stat":95,"name":"speed"}],
+    "types":[{"name":"ice"},{"name":"fairy"}]}
