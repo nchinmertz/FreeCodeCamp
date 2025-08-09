@@ -2,9 +2,6 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #0a0a23;
     color: #ffffff;
-}
-
-main{
     width: 100%;
     min-height: 100vh;
     position: relative;
@@ -13,6 +10,7 @@ main{
     justify-content: center;
     flex-direction: column;
 }
+
 h1{
     text-align: center;
     font-size: 2.5rem;
@@ -30,7 +28,6 @@ h1{
     padding: 20px;
     margin: 10px 0;
     background-color: white;
-    box-shadow: 0 6px 6px #002ead;
 }
 
 label{
@@ -38,7 +35,7 @@ label{
     margin-bottom: 20px;
 }
 
-.palindrome-btn {
+.check-btn {
     width: 90px;
     border: none;
     padding: 10px;
@@ -48,21 +45,14 @@ label{
     cursor: pointer;
 }
 
-.palindrome-input {
+.text-input {
     height: 30px;
     width: 250px;
-    text-align: center;
+    text-align: center; 
     font-size: 1.2rem;
     margin: 10px;
     border: none;
     border-bottom: 2px solid #5a01a7;
-}
-
-.user-input {
-    font-size: 1.4rem;
-    margin-top: 10px;
-    text-align: center;
-    color:black;
 }
 
 .results {
@@ -70,6 +60,13 @@ label{
     word-wrap: break-word;
     min-height: 50px;
     color: black;
+}
+
+.output{
+    font-size: 1.4rem;
+    margin-top: 10px;
+    text-align: center;
+    color:black;
 }
 
 .hidden {

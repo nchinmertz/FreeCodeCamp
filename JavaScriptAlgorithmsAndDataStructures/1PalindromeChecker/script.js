@@ -16,7 +16,7 @@ const checkPalindrome = (input) =>{
     } a palindrome.`;
 
     const pTag = document.createElement('p');
-    pTag.className = 'user-input';
+    pTag.className = 'output';
     pTag.innerText = resultMsg;
     ret.appendChild(pTag);
 
