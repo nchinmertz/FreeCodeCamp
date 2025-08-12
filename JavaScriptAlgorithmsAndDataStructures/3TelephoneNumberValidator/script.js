@@ -9,7 +9,7 @@ function checkUserInput(){
         return;
     }else{
         const regex = /^(1\s?)?(\([0-9]{3}\)|[0-9]{3})([\s\-]?)([0-9]{3}[\s\-]?[0-9]{4}$)/;
-        result.innerHTML = (regex.test(userInput.value)?"Valid US number: ":"Invalid US number: ")+userInput.value;
+        result.innerHTML = `<p>${(regex.test(userInput.value)?"Valid US number: ":"Invalid US number: ")+userInput.value}</p>`;
     }
 }
 

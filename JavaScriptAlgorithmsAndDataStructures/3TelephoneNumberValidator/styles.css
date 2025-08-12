@@ -1,0 +1,83 @@
+:root{
+    --phone-color: #c9d2ae;
+    --text-color: #252525;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: var(--text-color);
+    width: 100%;
+    min-height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.validator{
+    width: 250px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-image: linear-gradient(#EDDD53,#57C785, #2A7B9B);
+    border: 20px solid var(--phone-color);
+    border-radius: 15px;
+}
+
+label{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.user-input{
+    border:none;
+    border-bottom: 2px solid var(--text-color);
+    background: transparent;
+    text-align: center;
+    color: var(--text-color);
+}
+span{
+    background-color: var(--phone-color);
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    cursor: pointer;
+    width: 50px;
+    height: 20px;
+    margin: 5px;
+    border: none;
+    color: var(--text-color);
+    border-radius: 5px;
+    text-align: center;
+}
+
+#check-btn{
+    background-color:#30d965;
+}
+
+#clear-btn{
+    background-color: #fd6256;
+}
+
+#result-div{
+    overflow-y: auto;
+    height: 265px;
+    width: 100%;
+}
+.phone-header{
+    height:40px;
+    width:100%;
+    background-color: var(--phone-color);
+}
