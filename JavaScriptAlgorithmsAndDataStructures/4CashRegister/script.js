@@ -16,6 +16,7 @@ const cashGiven = document.getElementById('cash');
 const purchaseBtn = document.getElementById('purchase-btn');
 
 const formatResults = (status, change) => {
+    changeDueDisplay.classList.remove("hidden");
     changeDueDisplay.innerHTML = `<p>Status: ${status}</p>`;
     for(let i=0; i<9; i++){
         changeDueDisplay.innerHTML += `<p>${change[i][0]}: \$${change[i][1]}</p>`;
