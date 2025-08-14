@@ -9,9 +9,11 @@ const creatureTypes = document.getElementById("types");
 const creatureHp = document.getElementById("hp");
 const creatureAttack = document.getElementById("attack");
 const creatureDefense = document.getElementById("defense");
-const creatureSepecialAttack = document.getElementById("special-attack");
+const creatureSpecialAttack = document.getElementById("special-attack");
 const creatureSpecialDefense = document.getElementById("special-defense");
 const creatureSpeed = document.getElementById("speed");
+const creatureSpecialName = document.getElementById("special-name");
+const creatureDescripition = document.getElementById("description");
 
 const resetInfo = () =>{
     creatureName.textContent = "";
@@ -21,24 +23,28 @@ const resetInfo = () =>{
     creatureHp.textContent = "";
     creatureAttack.textContent = "";
     creatureDefense.textContent = "";
-    creatureSepecialAttack.textContent = "";
+    creatureSpecialAttack.textContent = "";
     creatureSpecialDefense.textContent = "";
     creatureSpeed.textContent = "";
     creatureTypes.textContent = "";
+    creatureSpecialName.textContent = "";
+    creatureDescripition.textContent = "";
 };
 
 const displayInfo = (info) =>{
     creatureName.textContent = `${info.name.toUpperCase()}`;
     creatureId.textContent = `#${info.id}`;
-    creatureWeight.textContent = `Weight: ${info.weight}`;
-    creatureHeight.textContent = `Height: ${info.height}`;
+    creatureSpecialName.textContent = `${info.special.name}`;
+    creatureDescripition.textContent = `${info.special.description}`;
+    creatureWeight.textContent = `${info.weight}`;
+    creatureHeight.textContent = `${info.height}`;
     creatureHp.textContent = `${info.stats[0].base_stat}`;
     creatureAttack.textContent = `${info.stats[1].base_stat}`;
     creatureDefense.textContent = `${info.stats[2].base_stat}`;
-    creatureSepecialAttack.textContent = `${info.stats[3].base_stat}`;
+    creatureSpecialAttack.textContent = `${info.stats[3].base_stat}`;
     creatureSpecialDefense.textContent = `${info.stats[4].base_stat}`;
     creatureSpeed.textContent = `${info.stats[5].base_stat}`;
-    creatureTypes.innerHTML = info.types.map(type => `<p>${type.name}</p>`).join("");
+    creatureTypes.innerHTML = info.types.map(type => `<span class="${type.name}">${type.name}</span>`).join("");
     
 };
 
@@ -46,6 +52,7 @@ const getCreature = async () => {
     try {
         const res = await fetch(`https://rpg-creature-api.freecodecamp.rocks/api/creature/${userInput.value.toLowerCase()}`);
         const data = await res.json();  
+        resetInfo();
         displayInfo(data);
         //console.log(data)
     } catch (err) {

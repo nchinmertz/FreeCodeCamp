@@ -8,26 +8,35 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header></header>
-    <main>
-      <div class="container">
+    <div class="card">
+      <div class="input-container">
+        <label for="search-input" >Search for Creature by Name or ID</label>
         <input id="search-input" type="text" required>
         <button id="search-button">Search</button>
       </div>
       <div class="output">
-        <div id="creature-name"></div>
-        <div id="creature-id"></div>
-        <div id="weight"></div>
-        <div id="height"></div>
-        <div id="types"></div>
-        <div id="hp"></div>
-        <div id="attack"></div>
-        <div id="defense"></div>
-        <div id="special-attack"></div>
-        <div id="special-defense"></div>
-        <div id="speed"></div>
+        <div class="top-container">
+          <span id="creature-name"></span>
+          <span id="creature-id"></span>
+          <div id="types"></div>
+          <p id="special-name"></p>
+          <p id="description"></p>
+        </div>
+        <div class="bottom-container">
+          <table>
+            <tr><th>Feature</th><th>Stat</th></tr>
+            <tr><td>Weight</td><td id="weight"></td></tr>
+            <tr><td>Height</td><td id="height"></td></tr>
+            <tr><td>HP</td><td id="hp"></td></tr>
+            <tr><td>Speed</td><td id="speed"></td></tr>
+            <tr><td>Attack</td><td id="attack"></td></tr>
+            <tr><td>Defense</td><td id="defense"></td></tr>
+            <tr><td>Special Attack</td><td id="special-attack"></td></tr>
+            <tr><td>Special Defense</td><td id="special-defense"></td></tr>
+          </table>
+        </div>
       </div>
-    </main>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
