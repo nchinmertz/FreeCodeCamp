@@ -4,14 +4,14 @@ html{
 body{
     font-family: sans-serif;
     text-align: center;
-    color:#333;
+    color:#918376;
     font-size: 1.6rem;
     line-height: 1.5;
     margin: 0;
 }
 main{
     display: block;
-    background:#eee;
+    background:#FEF9ED;
     margin: 30px 8px;
     padding: 15px;
     border-radius: 5px;
