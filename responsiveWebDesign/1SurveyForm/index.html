@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1 id="title">2nd Try Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+            <fieldset>
+                <label for="name" id="name-label">Name<input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
+                <label for="email" id="email-label">Email<input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+                <label for="number" id="number-label">Age<input id="number" name="age" type="number" min="10" max="120" placeholder="Enter your age"/></label>
+                <label for="dropdown">Which option best describes your reason for subscribing?
+                    <select id="dropdown" name="dropdown">
+                        <option value="">Select reason</option>
+                        <option value="1">Early access</option>
+                        <option value="2">Flagship shows</option>
+                        <option value="3">Exclusive shows/episodes</option>
+                        <option value="4"></option>
+                        <option value="5">Other</option>
+                    </select> 
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Would you recommend freeCodeCamp to a friend?</legend>
+                    <label for="definetly"><input id="definetly" type="radio" name="recommend" value="1" class="inline" checked /> Definetly</label>
+                    <label for="maybe"><input id="maybe" type="radio" name="recommend" value="2" class="inline"/> Maybe</label>
+                    <label for="not-sure"><input id="not-sure" type="radio" name="recommend" value="3" class="inline"/> Not Sure</label>
+                <legend>What shows are you enjoying?</legend>
+                    <label for="the-try-guys"><input id="the-try-guys" name="shows" type="checkbox" value="1" class="inline">The Try Guys</label>
+                    <label for="without-a-recipe"><input id="without-a-recipe" name="shows" type="checkbox" value="2" class="inline">Without a Recipe</label>
+                    <label for="eat-the-menu"><input id="eat-the-menu" name="shows" type="checkbox" value="3" class="inline">Eat the Menu</label>
+                    <label for="drop-into-city"><input id="drop-into-city" name="shows" type="checkbox" value="4" class="inline">Drop into City</label>
+                    <label for="new-guy-tries"><input id="new-guy-tries" name="shows" type="checkbox" value="5" class="inline">New Guy Tries</label>
+                    <label for="phoning-it-in"><input id="phoning-it-in" name="shows" type="checkbox" value="6" class="inline">Phoning It In</label>
+                    <label for="trolley-problems"><input id="trolley-problems" name="shows" type="checkbox" value="7" class="inline">Trolley Problems</label>
+                    <label for="escape-the-kitchen"><input id="escape-the-kitchen" name="shows" type="checkbox" value="8" class="inline">Escape the Kitchen</label>
+                    <label for="common-sense"><input id="common-sense" name="shows" type="checkbox" value="9" class="inline">Common Sense</label>
+                    <label for="candid-competition"><input id="candid-competition" name="shows" type="checkbox" value="10" class="inline">Candid Competition</label>
+                    <label for="smoke-show"><input id="smoke-show" name="shows" type="checkbox" value="11" class="inline">Smoke Show</label>
+                    <label for="the-die-guys"><input id="the-die-guys" name="shows" type="checkbox" value="12" class="inline">The Die Guys</label>
+                    <label for="keith-plays-a-normal-game"><input id="keith-plays-a-normal-game" name="shows" type="checkbox" value="13" class="inline">Keith Plays a Normal Game</label>
+                    <label for="late-night-eats"><input id="late-night-eats" name="shows" type="checkbox" value="14" class="inline">Late Night Eats</label>
+                    <label for="but-wait-theres-more"><input id="but-wait-theres-more" name="shows" type="checkbox" value="15" class="inline">But Wait Theres More</label>
+            </fieldset>  
+            <fieldset>
+                <label for="comments">Any comments or suggestions?
+                    <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+                  </label>
+            </fieldset> 
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </body>
+</html>
