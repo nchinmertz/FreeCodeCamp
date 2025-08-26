@@ -1,0 +1,168 @@
+--jQuerry--
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+    $("#target5").clone().appendTo("#left-well");
+    $("#target1").parent().css("background-color", "red");
+    $("#right-well").children().css("color", "orange");
+    $("#left-well").children().css("color", "green");
+    $(".target:nth-child(2)").addClass("animated bounce");
+    $(".target:even").addClass("animated shake");
+    $("body").addClass("animated hinge")
+  });
+</script>
+
+<!-- Only change code above this line -->
+
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>#left-well</h4>
+      <div class="well" id="left-well">
+        <button class="btn btn-default target" id="target1">#target1</button>
+        <button class="btn btn-default target" id="target2">#target2</button>
+        <button class="btn btn-default target" id="target3">#target3</button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h4>#right-well</h4>
+      <div class="well" id="right-well">
+        <button class="btn btn-default target" id="target4">#target4</button>
+        <button class="btn btn-default target" id="target5">#target5</button>
+        <button class="btn btn-default target" id="target6">#target6</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+--CSS Mixin--
+<style type='text/scss'>
+#square {
+  @include shape(50px, 50px, red);
+}
+
+#rect-a {
+  @include shape(100px, 50px, blue);
+}
+
+#rect-b {
+  @include shape(50px, 100px, orange);
+}
+
+@mixin shape($w,$h,$bg-color){
+  width:$w;
+  height:$h;
+  background-color:$bg-color;
+}
+
+
+</style>
+
+<div id="square"></div>
+<div id="rect-a"></div>
+<div id="rect-b"></div>
+
+--if/else--
+<style type='text/scss'>
+  @mixin border-stroke($val){
+    @if $val==light{
+      border: 1px solid black;
+    }@else if $val==medium{
+      border: 3px solid black;
+    }@else if $val==heavy{
+      border: 6px solid black;
+    }@else{
+      border: none;
+    }
+  }
+
+
+  #box {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    @include border-stroke(medium);
+  }
+</style>
+
+<div id="box"></div>
+
+--for--
+<style type='text/scss'>
+  @for $j from 1 through 6{
+    .text-#{$j}{font-size: 15px*$j}
+  }
+
+
+</style>
+
+<p class="text-1">Hello</p>
+<p class="text-2">Hello</p>
+<p class="text-3">Hello</p>
+<p class="text-4">Hello</p>
+<p class="text-5">Hello</p>
+
+--each--
+<style type='text/scss'>
+  @each $color in blue, black, red{
+    .#{$color}-bg{background-color:$color}
+  }
+
+
+  div {
+    height: 200px;
+    width: 200px;
+  }
+</style>
+
+<div class="blue-bg"></div>
+<div class="black-bg"></div>
+<div class="red-bg"></div>
+
+--while--
+<style type='text/scss'>
+  $x:1;
+  @while $x<6{
+    .text-#{$x}{font-size:15px*$x;}
+    $x:$x+1;
+  }
+
+
+</style>
+
+<p class="text-1">Hello</p>
+<p class="text-2">Hello</p>
+<p class="text-3">Hello</p>
+<p class="text-4">Hello</p>
+<p class="text-5">Hello</p>
+
+--entend css--
+<style type='text/scss'>
+  h3{
+    text-align: center;
+  }
+  .info{
+    width: 200px;
+    border: 1px solid black;
+    margin: 0 auto;
+  }
+  .info-important{
+    @extend .info;
+    background-color:magenta;
+  }
+
+
+
+</style>
+<h3>Posts</h3>
+<div class="info-important">
+  <p>This is an important post. It should extend the class ".info" and have its own CSS styles.</p>
+</div>
+
+<div class="info">
+  <p>This is a simple post. It has basic styling and can be extended for other uses.</p>
+</div>
