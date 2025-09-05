@@ -1,0 +1,6 @@
+** start of index.jsx **
+
+const JSX = <h1>Hello JSX!</h1>;
+
+** end of index.jsx **
+
