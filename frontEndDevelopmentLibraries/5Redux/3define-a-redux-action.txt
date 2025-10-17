@@ -1,0 +1,9 @@
+** start of script.js **
+
+// Define an action here:
+const action = {
+  type:"LOGIN"
+}
+
+** end of script.js **
+
