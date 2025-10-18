@@ -1,0 +1,11 @@
+** start of script.js **
+
+const action = {
+  type: 'LOGIN'
+}
+// Define an action creator here:
+const actionCreator=()=>{action}
+
+
+** end of script.js **
+
