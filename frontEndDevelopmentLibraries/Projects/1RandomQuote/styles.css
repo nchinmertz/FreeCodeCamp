@@ -1,0 +1,13 @@
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#quote-box{
+  height: 150px;
+  width: 200px;
+  padding: 30px;
+  border: 1px solid red
+}
