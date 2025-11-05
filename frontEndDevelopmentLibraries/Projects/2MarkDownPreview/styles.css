@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+textarea {
+  height: 100%;
+  width: 500px;
+  min-height: 300px;
+  border: 1px solid black;
+}
+
+#preview{
+  height: 100%;
+  width: 500px;
+  border: 1px solid black;
+}
+
+img[alt=drawing] { width: 200px; }
