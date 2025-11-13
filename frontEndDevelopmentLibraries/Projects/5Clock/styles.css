@@ -1,0 +1,53 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+}
+
+.timers{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: row;
+  padding-bottom: 10px;
+}
+
+.timer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right:10px;
+  font-size: 18px;
+}
+
+
+
+#timer-functions > button{
+  margin: 5px;
+  font-size: 15px;
+}
+
+.clock{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 5px solid green;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+#timer-label{
+  font-size: 15px;
+}
+
+#time-left{
+  font-size: 45px;
+}
+
+.clock-buttons>button{
+  margin:10px;
+}
