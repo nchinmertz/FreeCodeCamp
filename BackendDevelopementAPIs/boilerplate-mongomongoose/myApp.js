@@ -1,6 +1,6 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
-mongoose.connect("mongodb+srv://nchinmertz:Splashdown3542@cluster0.3kwfrlw.mongodb.net/?appName=Cluster0", { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
 
 const Schema = mongoose.Schema;
 const personSchema = new Schema({
