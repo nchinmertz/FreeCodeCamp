@@ -34,7 +34,6 @@ app.get('/api/hello', function(req, res) {
   res.json({ greeting: 'hello API' });
 });
 
-app.use(bodyParser.urlencoded({ extended: false }));
 app.post('/api/shorturl', (req, res) => {
 
   const inputURL = req.body.url;
